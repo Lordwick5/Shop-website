@@ -38,4 +38,5 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #db121f;
     border-radius: 5px;
+    color: white;
 }
