@@ -69,16 +69,25 @@
       </button>
 
       <nav id="nav-menu" class="mt-4 hidden sm:flex flex-col sm:flex-row gap-4 text-sm sm:text-base">
-        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Home</a>
-        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">About Us</a>
-        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Contact</a>
+        <a href="#" class="px-3 py-2 rounded text-black hover:text-white hover:bg-red-600 transition-colors duration-300">
+          Home
+        </a>
+        
+        <a href="#" class="px-3 py-2 rounded text-black hover:text-white hover:bg-red-600 transition-colors duration-300">
+          About Us
+        </a>
+        
+        <a href="#" class="px-3 py-2 rounded text-black hover:text-white hover:bg-red-600 transition-colors duration-300">
+          Contact
+        </a>
+        
       </nav>
     </div>
   </header>
 
   <!-- Slider -->
-  <div class="slider mt-6 px-4">
-    <div class="list grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <div class="slider">
+    <div class="list">
       <div class="item">
         <img src="./images/1744250446590.jpg" alt="machine image"/>
       </div>
@@ -88,6 +97,22 @@
       <div class="item">
         <img src="./images/1744250446599.jpg" alt="image of printing buddha picture"/>
       </div>
+    </div>
+  </div>
+
+  <!--button prev and next-->
+  <div class="buttons">
+    <button id="prev"><</button>
+    <button id="next">></button>
+      </div>
+
+      <ul class="dots">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </div>
 
