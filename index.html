@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Graphics Nepal</title>
-        <link rel="icon" type="image/jpg" href="./items/Logo.jpg">
-        <link rel="stylesheet" href="./styles/header.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    
-<body>
-    <div class="w-full py-4 px-2 bg-black sm:block hover:text-red">
-        <div class="flex justify-between px-10 gap-8">
-            <p class="flex items-center gap-1 text-xs text-white whitespace-nowrap ">Need help?&nbsp;
-              <a class="text-white hover:text-red-500 transition" href="tel:9851093692">9851093692</a>
-                |<a class="text-white active:text-white hover:text-red-500" aria-label="contact" href="/contact">Contact</a></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphics Nepal</title>
+  <link rel="icon" type="image/jpg" href="./items/Logo.jpg" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      safelist: ['hover:text-red-500']
+    }
+  </script>
+</head>
 
-        <div class="flex items-center justify-between gap-11">
-            <a aria-label="my-account" href="/dashboard/account"><div class=" items-center gap-2.5 text-white flex-nowrap hidden sm:flex transition ease-in-out duration-300 "><div><svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.666664 13V12.3333C0.666664 10.1242 2.45752 8.33331 4.66666 8.33331H7.33333C9.54246 8.33331 11.3333 10.1242 11.3333 12.3333V13" stroke="currentColor" stroke-linecap="round"></path><path d="M5.99999 6.33333C4.52723 6.33333 3.33333 5.13943 3.33333 3.66667C3.33333 2.19391 4.52723 1 5.99999 1C7.47273 1 8.66666 2.19391 8.66666 3.66667C8.66666 5.13943 7.47273 6.33333 5.99999 6.33333Z" stroke="currentColor" stroke-linecap="round"></path>
+<body class="bg-white">
+  <!-- Top Bar -->
+  <div class="w-full py-4 px-2 bg-black">
+    <div class="flex justify-between px-10 gap-8">
+      <p class="flex items-center gap-1 text-xs text-white whitespace-nowrap">
+        Need help?&nbsp;
+        <a class="text-white hover:text-red-500 transition" href="tel:9851093692">9851093692</a>
+        |
+        <a class="text-white hover:text-red-500 transition" href="/contact">Contact</a>
+      </p>
+
+      <div class="flex items-center gap-11">
+        <!-- My Account -->
+        <a href="/dashboard/account" aria-label="my-account">
+          <div class="items-center gap-2.5 text-white hidden sm:flex transition ease-in-out duration-300">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666664 13V12.3333C0.666664 10.1242 2.45752 8.33331 4.66666 8.33331H7.33333C9.54246 8.33331 11.3333 10.1242 11.3333 12.3333V13" stroke="currentColor" stroke-linecap="round" />
+              <path d="M5.99999 6.33333C4.52723 6.33333 3.33333 5.13943 3.33333 3.66667C3.33333 2.19391 4.52723 1 5.99999 1C7.47273 1 8.66666 2.19391 8.66666 3.66667C8.66666 5.13943 7.47273 6.33333 5.99999 6.33333Z" stroke="currentColor" stroke-linecap="round" />
             </svg>
-        </div>
-        <p class="text-xs text-inherit whitespace-nowrap hover:text-red-500">My Account</p>
-    </div></a>
-    <a aria-label="sign-in" href="/customer/account/login"><div class=" items-center text-white gap-2.5 flex-nowrap hidden sm:flex transition ease-in-out duration-300 "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.3" d="M10 2.5h4a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1h-4"></path>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M3 9h8m0 0L8 6m3 3-3 3"></path></svg>
-    <p class="text-xs text-inherit whitespace-nowrap hover:text-red-500">Sign in</p>
-        </div>
-            </a>
-        </div>
-    </div>
-</div>
+            <p class="text-xs hover:text-red-500">My Account</p>
+          </div>
+        </a>
 
-<header class="p-4 bg-gray-100 border-b-2 border-black">
+        <!-- Sign In -->
+        <a href="/customer/account/login" aria-label="sign-in">
+          <div class="items-center text-white gap-2.5 hidden sm:flex transition ease-in-out duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="1.3" d="M10 2.5h4a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1h-4" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M3 9h8m0 0L8 6m3 3-3 3" />
+            </svg>
+            <p class="text-xs hover:text-red-500">Sign in</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="p-4 bg-gray-100 border-b-2 border-black">
     <div class="flex items-center justify-between">
-      <!-- Logo -->
       <div class="flex items-center gap-4">
-        <img src="./items/Logo.jpg" alt="Graphics Nepal Logo" class="h-12 w-auto">
+        <img src="./items/Logo.jpg" alt="Graphics Nepal Logo" class="h-12 w-auto" />
         <span class="text-lg font-bold text-black">Graphics Nepal Pvt. Ltd.</span>
       </div>
-  
-      <!-- Hamburger Icon -->
+
       <button id="menu-toggle" type="button" class="sm:hidden block focus:outline-none" aria-label="Toggle menu">
         <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
@@ -48,33 +67,30 @@
             d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
-  
-    <!-- Nav Menu -->
-    <nav id="nav-menu" class="mt-4 hidden sm:flex flex-col sm:flex-row gap-4 text-sm sm:text-base">
-      <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Home</a>
-      <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">About Us</a>
-      <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Contact</a>
-    </nav>
-  </header>
-</div>
 
-
-<div class="slider">
-    <div class="list">
-        <div class="item">
-            <img src="./images/1744250446590.jpg" alt="machine image">
-        <div class="item">
-          <img src="./images/_storage_emulated_0_Android_data_com.miui.gallery_cache_SecurityShare_1744250446580.jpg" alt="side image of machine">
-        <div class="item">
-          <img src="./images/1744250446599.jpg" alt="image of printing buddha picture">
-        </div>
-        </div>
-        </div>
+      <nav id="nav-menu" class="mt-4 hidden sm:flex flex-col sm:flex-row gap-4 text-sm sm:text-base">
+        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Home</a>
+        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">About Us</a>
+        <a href="#" class="hover:bg-red-600 px-3 py-2 rounded text-black hover:text-white transition">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
-    
+  <!-- Slider -->
+  <div class="slider mt-6 px-4">
+    <div class="list grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="item">
+        <img src="./images/1744250446590.jpg" alt="machine image" class="w-full h-auto" />
+      </div>
+      <div class="item">
+        <img src="./images/_storage_emulated_0_Android_data_com.miui.gallery_cache_SecurityShare_1744250446580.jpg" alt="side image of machine" class="w-full h-auto" />
+      </div>
+      <div class="item">
+        <img src="./images/1744250446599.jpg" alt="image of printing buddha picture" class="w-full h-auto" />
+      </div>
+    </div>
+  </div>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
