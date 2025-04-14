@@ -8,15 +8,15 @@ const toggleBtn = document.getElementById('menu-toggle');
 
 let list = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
 let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
 
+let lengthItems = items.length - 1;
 let active = 0;
-let lengthItems = items.length;
 
 next.onclick = function (){
-  active = (active + 1) % lengthItems;
+  active = active + 1 <= lengthItems ? active + 1 : 0;
   reloadSlider();
 };
 
