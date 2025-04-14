@@ -21,20 +21,20 @@ next.onclick = function (){
 };
 
 prev.onclick = function(){
-  active = (active - 1 + lengthItems) % lengthItems;
+  active = active - 1 >= 0 ? active - 1 : lengthItems;
   reloadSlider();
 }
 
-let refreshSlider = setInterval(() => {next.click()}, 3000);
+let refreshInterval = setInterval(() => {next.click()}, 3000);
 function reloadSlider() {
-  let checkLeft = items[active].offsetLeft;
-  list.style.left = -checkLeft + 'px';
+  slider.style.left = -items[active].offsetLeft + 'px';
 
-  let lastActiveDot = document.querySelector('.slider .dots li.active');
-  lastActiveDot.classList.remove('active');
-  dots[active].classList.add('active');
-  clearInterval(refreshSlider);
-  refreshSlider = setInterval(() => {next.click()}, 3000);
+  let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 3000);
 }
 
 dots.forEach((li, key) => {
