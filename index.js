@@ -38,8 +38,12 @@ function reloadSlider() {
 }
 
 dots.forEach((li, key) => {
-  li.addEventListener('click', function(){
+  li.addEventListener('click', ()=>{
     active = key;
     reloadSlider();
   })
 })
+
+window.onresize = function(event) {
+  reloadSlider();
+};
