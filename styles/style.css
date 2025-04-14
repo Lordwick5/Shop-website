@@ -115,17 +115,17 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.dots li {
+.slider .dots li {
     list-style: none;
     width: 10px;
     height: 10px;
     background-color: #fff;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
-.dots li.active {
+.slider .dots li.active {
     width: 30px;
 }
 
