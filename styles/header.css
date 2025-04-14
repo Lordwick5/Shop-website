@@ -120,9 +120,15 @@ nav ul li a:hover {
     background-color: #fff;
     margin: 20px;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .dots li.active {
     width: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .slider{
+        height: 400px;
+    }
+}
