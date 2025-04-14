@@ -8,15 +8,6 @@
   <link rel="stylesheet" href="./styles/header.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <script>
-    tailwind.config = {
-      safelist: ['hover:text-white', 'hover:bg-red-600', '!text-white', '!bg-red-600'],
-    }
-  </script>
-</head>
-
-</head>
-
 <body class="bg-white">
   <!-- Top Bar -->
   <div class="w-full py-4 px-2 bg-black">
@@ -59,7 +50,7 @@
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-4">
         <img src="./items/Logo.jpg" alt="Graphics Nepal Logo" class="h-12 w-auto" />
-        <span class="text-lg font-bold text-black">Graphics Nepal Pvt. Ltd.</span>
+        <span class="text-lg font-bold text-black">GRAPHICS NEPAL PVT. LTD.</span>
       </div>
 
       <button id="menu-toggle" type="button" class="sm:hidden block focus:outline-none" aria-label="Toggle menu">
@@ -72,15 +63,15 @@
 
       <nav id="nav-menu" class="mt-4 hidden sm:flex flex-col sm:flex-row gap-4 text-sm sm:text-base">
         <a href="#" class="group px-3 py-2 rounded text-black hover:bg-red-600 transition-colors duration-300">
-          <span class="text-black group-hover:text-white">Home</span>
+          <span class="text-black font-bold group-hover:text-white">Home</span>
         </a>               
 
         <a href="#" class="group px-3 py-2 rounded text-black hover:bg-red-600 transition-colors duration-300">
-          <span class="text-black group-hover:text-white">About Us</span>
+          <span class="text-black font-bold group-hover:text-white">About Us</span>
         </a>
 
-        <a href="#" class="px-3 py-2 rounded text-black hover:bg-red-600 transition-colors hover:text-white duration-300">
-          Home
+        <a href="#" class="group px-3 py-2 rounded text-black hover:bg-red-600 transition-colors duration-300">
+          <span class="text-black font-bold group-hover:text-white">Contact</span>
         </a>        
 
       </nav>
