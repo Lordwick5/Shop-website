@@ -16,7 +16,7 @@ let active = 0;
 let lengthItems = items.length;
 
 next.onclick = function (){
-  if(active + 1 > lengthItems) {
+  if(active + 1 >= lengthItems) {
     active = 0;
   }else{
     active = active + 1;
@@ -26,7 +26,7 @@ next.onclick = function (){
 
 prev.onclick = function(){
   if(active - 1 < 0){
-    active = lengthItems;
+    active = lengthItems - 1;
   }else {
     active = active - 1;
   }

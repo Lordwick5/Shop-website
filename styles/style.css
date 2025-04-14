@@ -63,6 +63,7 @@ nav ul li a:hover {
     height: 700px;
     margin: auto;
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 
 .list {
@@ -71,7 +72,8 @@ nav ul li a:hover {
     left: 0;
     height: 100%;
     display: flex;
-    width: max-content;
+    width: calc(1300px * 3);
+    transition: 0.5s ease-in-out;
 }
 
 .list img {
