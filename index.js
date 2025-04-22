@@ -18,7 +18,11 @@ slider.style.transform = `translateX(-${slideWidth * index}px)`;
 // Generate dot indicators
 for (let i = 0; i < slides.length; i++) {
   const dot = document.createElement("span");
-  dot.classList.add("dot", "h-2", "w-2", "bg-gray-400", "rounded-full", "inline-block", "mx-1", "cursor-pointer");
+  dot.classList.add(
+    "dot", "h-2", "w-2", "bg-gray-400", "rounded-full", 
+    "inline-block", "mx-1", "cursor-pointer");
+  if (i === 0) dot.classList.replace("bg-gray-400", "bg-yellow-400"); // yellow active
+  
   if (i === 0) dot.classList.add("bg-black");
   dot.addEventListener("click", () => {
     index = i + 1;
@@ -30,8 +34,9 @@ for (let i = 0; i < slides.length; i++) {
 
 function updateDots() {
   const dots = dotsContainer.querySelectorAll("span");
-  dots.forEach(dot => dot.classList.remove("bg-black"));
-  dots[(index - 1 + slides.length) % slides.length].classList.add("bg-black");
+  dots.forEach(dot => dot.classList.replace("bg-yellow-400", "bg-gray-400"));
+  dots[(index - 1 + slides.length) % slides.length].classList.replace("bg-gray-400", "bg-yellow-400");
+
 }
 
 // Resize support

@@ -72,6 +72,9 @@
 
   <!-- Image Slider -->
 <div class="relative w-full max-w-4xl mx-auto mt-6">
+  <!--dot navigation-->
+  <div id="dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex justify-center"></div>
+  <div class="overflow-hidden rounded-lg">
   <div class="overflow-hidden rounded-lg">
     <div id="slider" class="flex transition-transform duration-700 ease-in-out">
       <img src="./images/PRILNT_1.jpg" class="w-full flex-shrink-0" alt=""/>
@@ -81,8 +84,6 @@
   </div>
 
   <!-- Navigation Buttons -->
-   <!-- Dot Navigation -->
-<div id="dots" class="flex justify-center mt-4"></div>
   <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full hover:bg-opacity-70">
     &#8592;
   </button>
