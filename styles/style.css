@@ -11,7 +11,7 @@
     animation: gradient-animation 18s ease infinite;
     padding-top: 2rem;     
     padding-bottom: 2rem;  
-    min-height: 100vh;
+    min-height: 1000vh;
 }
 
 @keyframes gradient-animation {
