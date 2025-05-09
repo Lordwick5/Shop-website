@@ -114,11 +114,11 @@ slider.addEventListener("touchend", (e) => {
 });
 
 
-// Optional: auto-hide nav on mobile after click
+/* Optional: auto-hide nav on mobile after click
 const links = document.querySelectorAll('#nav-menu a');
 links.forEach(link => link.addEventListener('click', () => {
   if (window.innerWidth < 640) {
     document.getElementById('nav-menu').classList.add('hidden');
   }
-}));
+}));*/
 
