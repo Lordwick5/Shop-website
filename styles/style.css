@@ -6,12 +6,12 @@
 }
 
 .gradient-background {
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background: linear-gradient(300deg, #00bfff, #ff4c68,  #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     padding-top: 2rem;     
     padding-bottom: 2rem;  
-    min-height: 1000vh;
+    min-height: 80vh;
 }
 
 @keyframes gradient-animation {
