@@ -78,3 +78,12 @@ nav ul li a:hover {
     color: white;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.group:hover .swiper-button-prev,
+.group:hover .swiper-button-next {
+  display: flex;
+}
