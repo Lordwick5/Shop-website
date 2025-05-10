@@ -87,3 +87,10 @@ nav ul li a:hover {
 .group:hover .swiper-button-next {
   display: flex;
 }
+
+.product-section {
+  background-image: url('../images/vecteezy_abstract-dark-pink-gradient-geometric-background-modern_4256686.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
