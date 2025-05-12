@@ -43,6 +43,11 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.text-stroke {
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Outline color */
+  color: rgb(10, 10, 131);           /* Hide fill color */
+}
+
 .logo {
     display: flex;
     align-items: center;
