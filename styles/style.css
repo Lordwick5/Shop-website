@@ -11,7 +11,6 @@
     animation: gradient-animation 18s ease infinite;
     padding-top: 2rem;     
     padding-bottom: 2rem;  
-    min-height: 80vh;
 }
 
 @keyframes gradient-animation {
@@ -99,4 +98,8 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.products {
+
 }
