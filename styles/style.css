@@ -99,3 +99,17 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.container2 {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+iframe {
+    width: 80%;
+    height: 500px;
+}
