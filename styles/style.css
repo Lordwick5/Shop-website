@@ -102,14 +102,9 @@ nav ul li a:hover {
 
 .container2 {
     width: 70%;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-iframe {
-    width: 80%;
-    height: 500px;
 }
